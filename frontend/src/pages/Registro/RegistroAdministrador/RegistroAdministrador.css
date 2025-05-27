@@ -1,0 +1,71 @@
+.registro-admin {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 12px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .registro-admin h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #2c3e50;
+  }
+  
+  .registro-admin label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #34495e;
+  }
+  
+  .registro-admin input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccd1d9;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border 0.2s ease-in-out;
+  }
+  
+  .registro-admin input:focus {
+    border-color: #3498db;
+    outline: none;
+  }
+  
+  .registro-admin button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .registro-admin button:hover {
+    background-color: #2980b9;
+  }
+  
+  .error {
+    margin-top: 20px;
+    color: #e74c3c;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* Mensaje de éxito */
+  .registro-admin p {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: #27ae60;
+  }
+  

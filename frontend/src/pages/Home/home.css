@@ -1,0 +1,100 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html, .home-container {
+    height: 100%;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Fondo y estructura principal */
+  .home-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, #e8f0fe, #ffffff);
+  }
+  
+  /* Contenido principal */
+  .home-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .home-main h1 {
+    font-size: 3rem;
+    color: #003366;
+    margin-bottom: 20px;
+  }
+  
+  .home-main p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #333;
+    max-width: 600px;
+  }
+  
+  /* Botón */
+  .home-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .home-button {
+    background-color: #004a99;
+    color: white;
+    padding: 12px 30px;
+    font-size: 1rem;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .home-button:hover {
+    background-color: #0066cc;
+  }
+  
+  .home-button.student {
+    background-color: #004a99;
+  }
+  
+  .home-button.company {
+    background-color: #003366;
+  }
+  
+  @media (max-width: 768px) {
+    .home-buttons {
+      max-width: 100%;
+      padding: 0 1rem;
+    }
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .home-main h1 {
+      font-size: 2rem;
+    }
+  
+    .home-main p {
+      font-size: 1rem;
+    }
+  
+    .home-button {
+      padding: 10px 25px;
+      font-size: 0.9rem;
+    }
+  }
+  

@@ -1,0 +1,262 @@
+.registro-estudiante-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 20px;
+}
+
+.registro-estudiante-container h2 {
+  font-size: 24px;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.registro-estudiante-container h3 {
+  font-size: 20px;
+  margin-bottom: 0.5rem;
+  color: #444;
+}
+
+.registro-estudiante-container p {
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+/* Estilos para el formulario de verificación */
+form {
+  background-color: white;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.error-message {
+  background-color: #ffebee;
+  color: #c62828;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+/* Estilos para inputs y textareas */
+input[type="text"],
+input[type="password"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  font-size: 16px;
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* Estilos para los grupos de formulario */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.form-group small {
+  display: block;
+  color: #666;
+  font-size: 14px;
+  margin-top: 0.25rem;
+}
+
+/* Contenedor de habilidades */
+.habilidades-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 12px;
+  padding: 1rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  background-color: #fafafa;
+}
+
+/* Elementos de habilidad */
+.habilidad-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+}
+
+.habilidad-item label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  font-weight: normal;
+}
+
+.habilidad-item input[type="checkbox"] {
+  width: auto;
+  margin: 0;
+}
+
+.habilidad-item select {
+  padding: 4px 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: white;
+}
+
+/* Botones */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #004a99;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #003366;
+}
+
+/* Estilos para el dropdown de nivel */
+select {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: white;
+  font-size: 14px;
+}
+
+/* Estilos para el estado verificado */
+.verificado {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .registro-estudiante-container {
+    margin: 1rem;
+    padding: 10px;
+  }
+
+  .habilidades-container {
+    grid-template-columns: 1fr;
+  }
+
+  form {
+    padding: 1rem;
+  }
+}
+
+/* Estilos para el formulario de verificación y contraseña */
+.verificacion-form,
+.password-form {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.verificacion-form h3,
+.password-form h3 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.verificacion-form p {
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.verificacion-form input,
+.password-form input {
+  width: 100%;
+  padding: 0.7rem;
+  margin-top: 0.3rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.verificacion-form button,
+.password-form button {
+  background-color: #004a99;
+  color: white;
+  border: none;
+  width: 100%;
+  margin-top: 1.5rem;
+  padding: 0.7rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.password-form small {
+  display: block;
+  margin-top: 0.3rem;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.sysacad-info {
+  background-color: #f8f9fa;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.sysacad-info h3 {
+  color: #004a99;
+  margin-bottom: 1rem;
+}
+
+.materias-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.materias-section h4 {
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.materias-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.materias-section li {
+  background-color: white;
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #e0e0e0;
+}
